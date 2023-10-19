@@ -1,0 +1,3 @@
+{
+  "extends": "@bonassa/eslint-config/configs/node"
+}
