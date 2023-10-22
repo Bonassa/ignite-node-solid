@@ -30,3 +30,44 @@ GymPass style app.
 - [ ] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [ ] Todas listas de dados precisam estar paginadas com 20 itens por página;
 - [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+
+## Dev
+Sobre o desenvolvimento desta API SOLID.
+
+### Prisma ORM
+Instalação do prisma em desenvolvimento
+
+```bash
+  npm install -D prisma
+```
+
+Criação do arquivo de configuração
+```bash
+  npx prisma init
+```
+
+Geração das tipagens das tabelas
+```bash
+  npx prisma generate
+```
+
+Instalação do Prisma Client para acesso ao banco
+```bash
+  npm install @prisma/client
+```
+
+Gerar migrations pro banco
+```bash
+  npx prisma migrate dev
+```
+
+### Docker
+Para subir os containers dessa aplicação com o docker
+
+```bash
+  # subir os containers
+  docker compose up -d 
+
+  # parar a execução dos containers
+  docker compose stop
+```
