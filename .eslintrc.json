@@ -1,3 +1,7 @@
 {
-  "extends": "@bonassa/eslint-config/configs/node"
+  "extends": "@bonassa/eslint-config/configs/node",
+  "rules": {
+    "camelcase": "off",
+    "no-useless-constructor": "off"
+  }
 }

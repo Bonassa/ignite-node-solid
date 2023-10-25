@@ -71,3 +71,8 @@ Para subir os containers dessa aplicação com o docker
   # parar a execução dos containers
   docker compose stop
 ```
+
+## SOLID
+
+### D - Dependency Inversion Principle
+Principio da inversão de dependências. Geralmente quando estamos utilizando um recurso de alguma dependência, a classe (ou função) faz a instanciação das dependências no próprio código, porém nesse principio, as dependências são recebidas como parâmetros.
