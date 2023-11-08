@@ -36,10 +36,12 @@ export class InMemoryCheckInsRepository implements CheckInsRepository {
   }
 
   async findManyByUserId(userId: string, page: number): Promise<CheckIn[]> {
-    const checkIns = this.items
+    return this.items
       .filter((item) => item.user_id === userId)
       .slice((page - 1) * 20, page * 20)
+  }
 
-    return checkIns
+  async countByUserId(userId: string): Promise<number> {
+    return this.items.filter((item) => item.user_id === userId).length
   }
 }
