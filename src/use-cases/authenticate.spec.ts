@@ -29,7 +29,7 @@ describe('Authenticate Use Case', () => {
     expect(user.id).toEqual(expect.any(String))
   })
 
-  it('should`n be able to authenticate with wrong email', async () => {
+  it('shouldn`t be able to authenticate with wrong email', async () => {
     await usersRepository.create({
       name: 'John Doe',
       email: 'johndoe@example.com',
