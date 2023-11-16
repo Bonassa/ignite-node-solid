@@ -18,6 +18,7 @@
   "author": "Renan Bonassa <renanemanoel07@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@fastify/jwt": "7.2.3",
     "@prisma/client": "5.4.2",
     "@types/bcryptjs": "2.4.5",
     "bcryptjs": "2.4.3",
